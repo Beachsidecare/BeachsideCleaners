@@ -6,20 +6,52 @@
   <title>Beachside Cleaners</title>
 
   <style>
-    /* LOGO + TITLE */
-    .site-logo {
-      height: 130px;
-      width: 130px;
-      object-fit: cover;
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand-title {
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .brand-logo {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
+      object-fit: cover;
       border: 3px solid #00aaff;
     }
 
-    .logo {
-      font-size: 2.4rem;
-      font-weight: 800;
-    }
+    /* mobile */
+    @media (max-width: 768px) {
+      .brand-row {
+        flex-direction: column;
+        text-align: center;
+      }
 
+      .brand-title {
+        font-size: 2.4rem;
+      }
+
+      .brand-logo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+  /* -----------------------------------------------------------
+     GLOBAL RESET + BASE STYLES
+  ----------------------------------------------------------- */
+
+<style>
+  /* rest of css */
+
+  <style>
     /* -----------------------------------------------------------
        GLOBAL RESET + BASE STYLES
     ----------------------------------------------------------- */
@@ -79,6 +111,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.9rem;
+      font-weight: bold;
     }
 
     .nav a {
@@ -166,114 +203,115 @@
       }
     }
 
-/* -----------------------------------------------------------
-   SERVICES
------------------------------------------------------------ */
-.services {
-  padding: 4rem 0;
-  text-align: center;
-}
+    /* -----------------------------------------------------------
+       SERVICES
+    ----------------------------------------------------------- */
+    .services {
+      padding: 4rem 0;
+      text-align: center;
+    }
 
-.services h2,
-.pricing h2,
-.testimonials h2,
-.gallery h2,
-.service-area h2,
-.contact h2 {
-  font-size: 2rem;
-}
+    .services h2,
+    .pricing h2,
+    .testimonials h2,
+    .gallery h2,
+    .service-area h2,
+    .contact h2 {
+      font-size: 2rem;
+    }
 
-.service-cards {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
+    .service-cards {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
 
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  transition: 0.3s;
-  text-align: left;
-}
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-align: left;
+    }
 
-.card:hover {
-  transform: translateY(-6px);
-}
+    .card:hover {
+      transform: translateY(-6px);
+    }
 
-.card h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
 
-/* -----------------------------------------------------------
-   PRICING
------------------------------------------------------------ */
-.pricing {
-  padding: 4rem 0;
-  background: #e8f7ff;
-  text-align: center;
-}
+    /* -----------------------------------------------------------
+       PRICING
+    ----------------------------------------------------------- */
+    .pricing {
+      padding: 4rem 0;
+      background: #e8f7ff;
+      text-align: center;
+    }
 
-.pricing-cards {
-  display: grid;
-  margin-top: 2rem;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-}
+    .pricing-cards {
+      display: grid;
+      margin-top: 2rem;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
 
-.price {
-  font-size: 2rem;
-  margin: 1rem 0;
-}
+    .price {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
 
-.popular {
-  border: 3px solid var(--primary);
-  transform: scale(1.05);
-}
+    .popular {
+      border: 3px solid var(--primary);
+      transform: scale(1.05);
+    }
 
-/* -----------------------------------------------------------
-   TESTIMONIALS
------------------------------------------------------------ */
-.testimonials {
-  padding: 4rem 0;
-  text-align: center;
-}
+    /* -----------------------------------------------------------
+       TESTIMONIALS
+    ----------------------------------------------------------- */
+    .testimonials {
+      padding: 4rem 0;
+      text-align: center;
+    }
 
-.slider {
-  max-width: 650px;
-  margin: 2rem auto;
-  position: relative;
-}
+    .slider {
+      max-width: 650px;
+      margin: 2rem auto;
+      position: relative;
+    }
 
-.slide {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
+    .slide {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
 
-.slide.active {
-  display: block;
-  opacity: 1;
-}
+    .slide.active {
+      display: block;
+      opacity: 1;
+    }
 
-.slide-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 0.7rem 1rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
+    .slide-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
 
-.prev { left: -50px; }
-.next { right: -50px; }
+    .prev { left: -50px; }
+    .next { right: -50px; }
+
     /* -----------------------------------------------------------
        GALLERY
     ----------------------------------------------------------- */
@@ -486,12 +524,10 @@
   <!-- HEADER -->
   <header class="header">
     <div class="container header-inner">
-      <img src="logo.jpg"
-     alt="Beachside Cleaners Logo"
-     class="site-logo">
-
-      <h1 class="logo">Beachside Cleaners</h1>
-
+    <div class="brand">
+  <h1 class="logo">Beachside Cleaners</h1>
+  <img src="logo.jpg" alt="Beachside Cleaners Logo" class="site-logo">
+</div>
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
@@ -505,19 +541,26 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="container hero-content">
-      <h2>Professional Cleaning • Repairs • Yard Cleanup</h2>
-      <p>Proudly serving Northwest Indiana, Southwest Michigan, and the greater Chicago area.</p>
-      <a href="#contact" class="btn-primary">Book a Cleaning</a>
+<section class="hero">
+  <div class="container hero-content">
+    <div class="brand-row">
+      <h1 class="brand-title">Beachside Cleaners</h1>
+      <img src="logo.jpg" alt="Beachside Cleaners Logo" class="brand-logo">
     </div>
 
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-      <path fill="rgba(255,255,255,0.6)" d="M0,224L1440,32L1440,0L0,0Z"></path>
-      <path fill="rgba(255,255,255,0.4)" d="M0,288L1440,96L1440,0L0,0Z"></path>
-      <path fill="#ffffff" d="M0,320L1440,160L1440,0L0,0Z"></path>
-    </svg>
-  </section>
+    <p>
+      Proudly serving Northwest Indiana, Southwest Michigan, and the greater Chicago area.
+    </p>
+  </div>
+
+  <!-- WAVES MUST BE INSIDE .hero -->
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+    <path fill="rgba(255,255,255,0.6)" d="M0,224L1440,32L1440,0L0,0Z"></path>
+    <path fill="rgba(255,255,255,0.4)" d="M0,288L1440,96L1440,0L0,0Z"></path>
+    <path fill="#ffffff" d="M0,320L1440,160L1440,0L0,0Z"></path>
+  </svg>
+</section>
+
 
   <!-- SERVICES -->
   <section class="services" id="services">
