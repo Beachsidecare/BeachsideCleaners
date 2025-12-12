@@ -158,19 +158,34 @@ bookingForm.addEventListener("submit", (e) => {
 /* -----------------------------------------------------------
    Service Area Map (Leaflet.js)
 ----------------------------------------------------------- */
-const map = L.map('map').setView([27.915, -82.827], 11); // Example region
+const map = L.map('map').setView([41.7, -87.5], 8);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors"
 }).addTo(map);
 
 // Service locations
+/* -----------------------------------------------------------
+   Service Area Map (Leaflet.js)
+----------------------------------------------------------- */
+
+const map = L.map('map').setView([41.7, -87.5], 8); // Chicago + NW Indiana + SW Michigan
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors"
+}).addTo(map);
+
+// Updated service locations
 const locations = [
-  { name: "Clearwater Beach", coords: [27.977, -82.827] },
-  { name: "Belleair Beach", coords: [27.925, -82.849] },
-  { name: "Indian Rocks Beach", coords: [27.897, -82.851] }
+  { name: "Chicago, IL", coords: [41.8781, -87.6298] },
+  { name: "Northwest Indiana (Hammond)", coords: [41.5834, -87.5000] },
+  { name: "Gary, IN", coords: [41.6020, -87.3370] },
+  { name: "Merrillville, IN", coords: [41.4828, -87.3328] },
+  { name: "Michigan City, IN", coords: [41.7075, -86.8950] },
+  { name: "Southwest Michigan (New Buffalo)", coords: [41.7936, -86.7435] }
 ];
 
 locations.forEach(loc => {
   L.marker(loc.coords).addTo(map).bindPopup(`<b>${loc.name}</b><br>Now servicing!`);
 });
+
