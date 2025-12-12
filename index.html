@@ -3,30 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Beachside Cleaners</title>
-
-<style>
-  .site-logo {
-    height: 130px;
-    width: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #00aaff;
-  }
-
-  .logo {
-    font-size: 2.4rem;
-    font-weight: 800;
-  }
-
-  /* -----------------------------------------------------------
-     GLOBAL RESET + BASE STYLES
-  ----------------------------------------------------------- */
-
-<style>
-  /* rest of css */
+  <title>Beachside Cleaners</title>
 
   <style>
+    /* LOGO + TITLE */
+    .site-logo {
+      height: 130px;
+      width: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00aaff;
+    }
+
+    .logo {
+      font-size: 2.4rem;
+      font-weight: 800;
+    }
+
     /* -----------------------------------------------------------
        GLOBAL RESET + BASE STYLES
     ----------------------------------------------------------- */
@@ -86,11 +79,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 1.9rem;
-      font-weight: bold;
     }
 
     .nav a {
@@ -178,115 +166,114 @@
       }
     }
 
-    /* -----------------------------------------------------------
-       SERVICES
-    ----------------------------------------------------------- */
-    .services {
-      padding: 4rem 0;
-      text-align: center;
-    }
+/* -----------------------------------------------------------
+   SERVICES
+----------------------------------------------------------- */
+.services {
+  padding: 4rem 0;
+  text-align: center;
+}
 
-    .services h2,
-    .pricing h2,
-    .testimonials h2,
-    .gallery h2,
-    .service-area h2,
-    .contact h2 {
-      font-size: 2rem;
-    }
+.services h2,
+.pricing h2,
+.testimonials h2,
+.gallery h2,
+.service-area h2,
+.contact h2 {
+  font-size: 2rem;
+}
 
-    .service-cards {
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
+.service-cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
 
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-      transition: 0.3s;
-      text-align: left;
-    }
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: left;
+}
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
+.card:hover {
+  transform: translateY(-6px);
+}
 
-    .card h3 {
-      color: var(--primary);
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-    }
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
 
-    /* -----------------------------------------------------------
-       PRICING
-    ----------------------------------------------------------- */
-    .pricing {
-      padding: 4rem 0;
-      background: #e8f7ff;
-      text-align: center;
-    }
+/* -----------------------------------------------------------
+   PRICING
+----------------------------------------------------------- */
+.pricing {
+  padding: 4rem 0;
+  background: #e8f7ff;
+  text-align: center;
+}
 
-    .pricing-cards {
-      display: grid;
-      margin-top: 2rem;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    }
+.pricing-cards {
+  display: grid;
+  margin-top: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
 
-    .price {
-      font-size: 2rem;
-      margin: 1rem 0;
-    }
+.price {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
 
-    .popular {
-      border: 3px solid var(--primary);
-      transform: scale(1.05);
-    }
+.popular {
+  border: 3px solid var(--primary);
+  transform: scale(1.05);
+}
 
-    /* -----------------------------------------------------------
-       TESTIMONIALS
-    ----------------------------------------------------------- */
-    .testimonials {
-      padding: 4rem 0;
-      text-align: center;
-    }
+/* -----------------------------------------------------------
+   TESTIMONIALS
+----------------------------------------------------------- */
+.testimonials {
+  padding: 4rem 0;
+  text-align: center;
+}
 
-    .slider {
-      max-width: 650px;
-      margin: 2rem auto;
-      position: relative;
-    }
+.slider {
+  max-width: 650px;
+  margin: 2rem auto;
+  position: relative;
+}
 
-    .slide {
-      display: none;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
 
-    .slide.active {
-      display: block;
-      opacity: 1;
-    }
+.slide.active {
+  display: block;
+  opacity: 1;
+}
 
-    .slide-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      padding: 0.7rem 1rem;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-    .prev { left: -50px; }
-    .next { right: -50px; }
-
+.prev { left: -50px; }
+.next { right: -50px; }
     /* -----------------------------------------------------------
        GALLERY
     ----------------------------------------------------------- */
