@@ -46,4 +46,193 @@
 
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
       <path fill="rgba(255,255,255,0.6)" d="M0,224L1440,32L1440,0L0,0Z"></path>
-      <path fill="
+      <path fill="rgba(255,255,255,0.4)" d="M0,288L1440,96L1440,0L0,0Z"></path>
+      <path fill="#ffffff" d="M0,320L1440,160L1440,0L0,0Z"></path>
+    </svg>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <div class="service-cards">
+        <div class="card">
+          <h3>🏡 Residential Cleaning</h3>
+          <p>Eco-friendly full home cleaning.</p>
+        </div>
+        <div class="card">
+          <h3>🏘 Airbnb / Rental Turnovers</h3>
+          <p>Fast, reliable, 5-star cleaning for vacation rentals.</p>
+        </div>
+        <div class="card">
+          <h3>🧹 Yard Cleanup</h3>
+          <p>Seasonal cleanup & property refresh.</p>
+        </div>
+        <div class="card">
+          <h3>🛠 Small Repairs</h3>
+          <p>Handyman work, patching, minor fixes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2>Pricing Plans</h2>
+
+      <div class="pricing-cards">
+        <div class="card">
+          <h3>Standard Clean</h3>
+          <p class="price">$120</p>
+          <ul>
+            <li>Bedrooms / Bathrooms</li>
+            <li>Vacuum & Mop</li>
+            <li>Kitchen Surfaces</li>
+          </ul>
+          <a href="#" id="openBooking2" class="btn-primary">Book Now</a>
+        </div>
+
+        <div class="card popular">
+          <h3>Deep Clean</h3>
+          <p class="price">$200</p>
+          <ul>
+            <li>Baseboards & Walls</li>
+            <li>Appliances</li>
+            <li>Full Detail Cleaning</li>
+          </ul>
+          <a href="#" id="openBooking3" class="btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>Customer Reviews</h2>
+
+      <div class="slider">
+        <button class="slide-btn prev">‹</button>
+
+        <div class="slides">
+          <div class="slide active">
+            <p>"They cleaned our Michigan vacation home PERFECTLY!"</p>
+            <strong>- Amanda R.</strong>
+          </div>
+
+          <div class="slide">
+            <p>"Very reliable cleaning crew for our rentals."</p>
+            <strong>- Marcus P.</strong>
+          </div>
+
+          <div class="slide">
+            <p>"Amazing service in NW Indiana. Highly recommended."</p>
+            <strong>- Julie S.</strong>
+          </div>
+        </div>
+
+        <button class="slide-btn next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2>Before & After Gallery</h2>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1598514982971-d600e5a1069d?w=900" alt="">
+        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900" alt="">
+        <img src="https://images.unsplash.com/photo-1598515213416-bf6b83abbb56?w=900" alt="">
+        <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c5?w=900" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightboxImg" src="">
+  </div>
+
+  <!-- SERVICE AREA MAP -->
+  <section class="service-area" id="service-area">
+    <div class="container">
+      <h2>Service Area</h2>
+      <p>We proudly serve Northwest Indiana, Southwest Michigan, and the Chicago metropolitan area.</p>
+
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <form id="contact-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+
+      <p class="success-msg" id="successMsg">Message sent! 🌊</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Beachside Cleaners • All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat-bubble" id="chatBubble">💬</div>
+
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <span>Beachside Support</span>
+      <button id="closeChat">✖</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <input type="text" id="chatInput" placeholder="Type a message...">
+  </div>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="booking-modal">
+    <div class="booking-content">
+      <span id="closeBooking" class="close-btn">&times;</span>
+      <h2>Online Booking</h2>
+
+      <form id="bookingForm">
+        <input type="text" id="b-name" placeholder="Your Name" required>
+        <input type="email" id="b-email" placeholder="Email" required>
+        <input type="date" id="b-date" required>
+        <input type="time" id="b-time" required>
+
+        <select id="b-service" required>
+          <option value="">Select Service</option>
+          <option>Residential Cleaning</option>
+          <option>Vacation Rental Turnover</option>
+          <option>Yard Cleanup</option>
+          <option>Small Repairs</option>
+        </select>
+
+        <button class="btn-primary" type="submit">Confirm Booking</button>
+      </form>
+
+      <p id="bookingSuccess" class="booking-success">Booking Submitted! 🌊</p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
