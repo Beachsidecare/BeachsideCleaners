@@ -7,15 +7,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
   <style>
-    /* Custom Header Styles */
-    .custom-header {
+    header.custom-header {
       background-color: #0077b6;
       padding: 2.5rem 1rem;
       text-align: center;
       color: white;
     }
 
-    .custom-header .logo {
+    .logo {
       height: 120px;
       width: 120px;
       border-radius: 50%;
@@ -23,115 +22,124 @@
       margin-bottom: 1rem;
     }
 
-    .custom-header h1 {
+    h1 {
       font-family: 'Pacifico', cursive;
       font-size: 3rem;
       margin: 0;
       color: white;
     }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Custom Header -->
-  <header class="custom-header">
-    <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
-    <h1>Beachside Cleaners</h1>
-  </header>
+<!-- Header -->
+<header class="custom-header">
+  <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
+  <h1>Beachside Cleaners</h1>
+</header>
 
-  <!-- Navigation -->
-  <nav class="container-fluid">
-    <ul>
-      <li><strong>Menu</strong></li>
-    </ul>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact" role="button">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navigation -->
+<nav class="container-fluid">
+  <ul>
+    <li><strong>Menu</strong></li>
+  </ul>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact" role="button">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Main Content -->
-  <main class="container">
-    <div class="grid">
-      <section id="about">
-        <hgroup>
-      <section id="about">
+<!-- Main Content -->
+<main class="container">
+  <div class="grid">
+    <!-- About Section -->
+    <section id="about">
+      <hgroup>
+        <h2>About Us</h2>
+        <h3>Family-Run Full-Service Cleaning</h3>
+      </hgroup>
+      <p>
+        At Beachside Cleaners, we are a family-run team that does it all.
+        Whether your home needs a fresh scrub, a quick fix, or a major yard rescue,
+        we show up ready to roll with tools in hand and smiles on our faces.
+      </p>
+      <figure>
+        <img src="https://via.placeholder.com/800x400?text=Family+Cleaning+Team" alt="Family Team Cleaning" />
+        <figcaption>Local family-owned service you can trust.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <hgroup>
+        <h2>Our Services</h2>
+        <h3>Flexible Packages to Meet Your Needs</h3>
+      </hgroup>
+      <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
+      <figure>
+        <img src="https://via.placeholder.com/800x400?text=Deep+Cleaning+in+Action" alt="Deep Cleaning" />
+        <figcaption>Our team gives your home the refresh it deserves.</figcaption>
+      </figure>
+    </section>
+  </div>
+</main>
+
+<!-- Contact Section -->
+<section id="contact" class="container">
   <hgroup>
-    <h2>About Us</h2>
-    <h3>Family-Run Full-Service Cleaning</h3>
+    <h2>Contact Us</h2>
+    <h3>We're ready when you are</h3>
   </hgroup>
-  <p>
-    At Beachside Cleaners, we are a family-run team that does it all.
-    Whether your home needs a fresh scrub, a quick fix, or a major yard rescue,
-    we show up ready to roll with tools in hand and smiles on our faces.
-  </p>
+  <form class="grid" onsubmit="return showConfirmation(event)">
+    <input type="text" id="firstname" name="firstname" placeholder="Your Name" required />
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+    <button type="submit">Send Message</button>
+    <p id="confirmation" style="display: none; color: green;">Message sent! Thank you!</p>
+  </form>
   <figure>
-    <img src="https://via.placeholder.com/800x400?text=Family+Cleaning+Team" alt="Family Team Cleaning" />
-    <figcaption>Local family-owned service you can trust.</figcaption>
+    <img src="https://via.placeholder.com/800x400?text=Call+or+Message+Us+Today!" alt="Contact Us" />
   </figure>
 </section>
 
-      <section id="services">
-        <hgroup>
-          <h2>Services</h2>
-          <h3>What We Offer</h3>
-        </hgroup>
-
-        <h3>Standard Cleaning</h3>
-        <p>
-          Perfect for regular upkeep. Includes dusting, vacuuming, mopping, kitchen & bathroom cleaning, and general tidying. <br />
-          <strong>Starting at $120</strong>
-        </p>
-
-        <h3>Deep Cleaning</h3>
-        <p>
-          For homes that need extra attention—includes baseboards, inside appliances, vents, and detailed scrubbing. <br />
-          <strong>Starting at $180</strong>
-        </p>
-
-        <h3>Move-In / Move-Out Cleaning</h3>
-        <p>
-          Ideal for new homeowners or renters. Top-to-bottom clean including cabinets, drawers, and fixtures. <br />
-          <strong>Starting at $200</strong>
-        </p>
-
-        <h3>Bundle Packages – Save More When You Combine!</h3>
-        <ul>
-          <li><strong>Fresh Start Package:</strong> Deep cleaning, yard cleanup, minor home touch-ups. <em>Save 15% when booked together</em></li>
-          <li><strong>Beachside Refresh (Rental Bundle):</strong> Turnover cleaning & staging, yard tidying, maintenance check. <em>Loyalty discount after 5 bookings</em></li>
-          <li><strong>Home & Yard Combo:</strong> House cleaning + yard cleanup in one visit. <em>Save $25–$50 per visit when bundled</em></li>
-          <li><strong>Full Home Care Bundle:</strong> Weekly/biweekly/monthly cleaning + yard care + monthly home repair check. <em>Discounted monthly rate anytime</em></li>
-          <li><strong>Total Care Membership:</strong> Recurring cleanings, monthly yard service, seasonal maintenance. <em>Worry-free property upkeep all year long</em></li>
-        </ul>
-      </section>
-    </div>
-  </main>
-
-  <!-- Contact Section -->
-  <!-- Contact Section -->
-<section id="contact" aria-label="Subscribe example">
-  <div class="container">
-    <article>
-      <hgroup>
-        <h2>Contact Us</h2>
-        <h3>We're ready when you are</h3>
-      </hgroup>
-      <!-- Replace this form -->
-      <form class="grid">
-        ...
-      </form>
-      ...
-    </article>
+<!-- Gallery Section -->
+<section class="container gallery">
+  <h2>Photo Gallery</h2>
+  <div class="grid">
+    <figure>
+      <img src="https://via.placeholder.com/400x300?text=Before+Cleaning" alt="Before Cleaning" />
+      <figcaption>Before Service</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x300?text=After+Cleaning" alt="After Cleaning" />
+      <figcaption>After Service</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/400x300?text=Yard+Work" alt="Yard Work" />
+      <figcaption>Outdoor Cleanup</figcaption>
+    </figure>
   </div>
 </section>
 
-  <!-- Footer -->
-  <footer class="container">
-    <small>
-      <a href="#">© 2025 Beachside Cleaners</a> • <a href="#">Privacy Policy</a>
-    </small>
-  </footer>
+<!-- Footer -->
+<footer class="container">
+  <small><a href="#">© 2025 Beachside Cleaners</a> • <a href="#">Privacy Policy</a></small>
+</footer>
+
+<!-- Confirmation Script -->
+<script>
+  function showConfirmation(event) {
+    event.preventDefault();
+    document.getElementById('confirmation').style.display = 'block';
+    return false;
+  }
+</script>
 
 </body>
 </html>
