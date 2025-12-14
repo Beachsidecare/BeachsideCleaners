@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Services - Beachside Cleaners</title>
-
-  <!-- Pico CSS & Google Font -->
+  <title>Services - Beachside Cleaners</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-
   <style>
     header.custom-header {
       background-color: #0077b6;
@@ -32,83 +29,59 @@
       color: white;
     }
 
-    nav.container-fluid ul li a {
-      font-weight: bold;
-    }
-
-    .gallery img {
+    img.services-image {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER (exact same as home) -->
-  <header class="custom-header">
-    <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
-    <h1>Beachside Cleaners</h1>
-  </header>
+<header class="custom-header">
+  <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
+  <h1>Beachside Cleaners</h1>
+</header>
 
-  <!-- NAVIGATION -->
-  <nav class="container-fluid">
+<nav class="container-fluid">
+  <ul>
+    <li><strong>Menu</strong></li>
+  </ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="secondary">Services</a></li>
+    <li><a href="tips.html">Pro Tips</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" role="button">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section>
+    <h2>Our Services</h2>
+    <h3>Flexible Packages to Meet Your Needs</h3>
+
+    <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
+
+    <img src="images/services.jpg" alt="Cleaning supplies" class="services-image" />
+
+    <p>Our team offers everything from cleaning to yard work and painting.</p>
+
     <ul>
-      <li><strong>Menu</strong></li>
+      <li><strong>Standard Cleaning:</strong> Starting at $120</li>
+      <li><strong>Deep Cleaning:</strong> Starting at $180</li>
+      <li><strong>Move-in/Move-out:</strong> Custom quotes available</li>
+      <li><strong>Yard Clean-up:</strong> Available year-round</li>
+      <li><strong>Snow Removal:</strong> Winter months only</li>
+      <li><strong>Painting:</strong> Interior and small exterior projects</li>
     </ul>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html" class="secondary">Services</a></li>
-      <li><a href="index.html#contact" role="button">Contact</a></li>
-    </ul>
-  </nav>
+  </section>
+</main>
 
-  <!-- MATCHED BODY LAYOUT -->
-  <main class="container">
-    <div class="grid">
-
-      <!-- Services Section -->
-      <section id="services">
-        <hgroup>
-          <h2>Our Services</h2>
-          <h3>Flexible Packages to Meet Your Needs</h3>
-        </hgroup>
-
-        <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
-
-        <figure>
-          <img src="images/services.jpg" alt="Cleaner working on house" />
-          <figcaption>Our team offers everything from cleaning to yard work and painting.</figcaption>
-        </figure>
-
-        <ul>
-          <li><strong>Standard Cleaning:</strong> Starting at $120</li>
-          <li><strong>Deep Cleaning:</strong> Starting at $180</li>
-          <li><strong>Move-In / Move-Out:</strong> Starting at $200</li>
-        </ul>
-
-        <h3>Bundle Packages</h3>
-        <ul>
-          <li><strong>Fresh Start Package:</strong> Save 15% with deep cleaning + yard cleanup</li>
-          <li><strong>Beachside Refresh:</strong> Airbnb bundle – loyalty discount after 5 visits</li>
-          <li><strong>Home & Yard Combo:</strong> Save $25–$50 when combined</li>
-          <li><strong>Full Home Care:</strong> Monthly cleaning, yard work, home checks</li>
-          <li><strong>Total Care Membership:</strong> Year-round property upkeep</li>
-        </ul>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <small><a href="#">© 2025 Beachside Cleaners</a> • <a href="#">Privacy Policy</a></small>
-  </footer>
+<footer class="container">
+  <small>© 2025 Beachside Cleaners</small>
+</footer>
 
 </body>
 </html>
