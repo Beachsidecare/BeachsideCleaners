@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services | Beachside Cleaners</title>
-  <meta name="description" content="Professional residential cleaning, yard cleanup, repairs, and rental turnovers in Northwest Indiana, Southwest Michigan, and Chicago.">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services - Beachside Cleaners</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    header {
+      background-color: #0077b6;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-
-    <a href="index.html" class="brand">
-      <span class="brand-name">Beachside Cleaners</span>
-      <img
-        src="logo.jpg"
-        alt="Beachside Cleaners beach-themed cleaning logo"
-        class="site-logo"
-      >
-    </a>
-
-    <nav class="nav">
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html" class="btn-primary">Contact</a>
-    </nav>
-
-  </div>
+<header>
+  <h1>Beachside Cleaners</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 </header>
 
-<main class="container services">
-  <h1>Our Cleaning & Home Services</h1>
+<main class="container">
+  <h2>Our Services</h2>
+  <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
+
+  <figure>
+    <img src="images/services.jpg" alt="Cleaner working on house" />
+    <figcaption>Our team offers everything from cleaning to yard work and painting.</figcaption>
+  </figure>
 
   <ul>
-    <li><strong>Residential Cleaning:</strong> Full-home, deep, and routine cleanings.</li>
-    <li><strong>Vacation Rental Turnovers:</strong> Airbnb and short-term rental cleaning.</li>
-    <li><strong>Yard Cleanup:</strong> Seasonal debris removal and property refresh.</li>
-    <li><strong>Small Repairs:</strong> Minor handyman fixes and maintenance.</li>
+    <li><strong>Standard Cleaning:</strong> Starting at $120</li>
+    <li><strong>Deep Cleaning:</strong> Starting at $180</li>
+    <li><strong>Move-In/Move-Out Cleaning:</strong> Starting at $200</li>
+    <li><strong>Yard Cleanup</strong> & Small Repairs</li>
   </ul>
-
-  <p>
-    We proudly serve Northwest Indiana, Southwest Michigan, and the greater Chicago area.
-  </p>
-
-  <a href="contact.html" class="btn-primary">Request a Quote</a>
 </main>
 
-<footer class="footer">
-  <p>&copy; 2025 Beachside Clea
+<footer class="container">
+  <small>© 2025 Beachside Cleaners</small>
+</footer>
 
-      
+</body>
+</html>
