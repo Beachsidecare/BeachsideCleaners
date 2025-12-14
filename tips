@@ -30,40 +30,41 @@
   </style>
 </head>
 <body>
-  <header class="custom-header">
-    <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
-    <h1>Beachside Cleaners</h1>
-  </header>
 
-  <!-- Navigation -->
-  <nav class="container-fluid">
+<header class="custom-header">
+  <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
+  <h1>Beachside Cleaners</h1>
+</header>
+
+<nav class="container-fluid">
+  <ul>
+    <li><strong>Menu</strong></li>
+  </ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="tips.html" class="secondary">Pro Tips</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" role="button">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section>
+    <h2>Pro Cleaning Tips</h2>
     <ul>
-      <li><strong>Menu</strong></li>
+      <li>Use vinegar and baking soda for natural drain cleaning.</li>
+      <li>Dust top to bottom — always clean high first.</li>
+      <li>Microfiber cloths beat paper towels every time.</li>
+      <li>Lemon + salt cleans sinks and disposals.</li>
+      <li>Don't forget baseboards and corners!</li>
     </ul>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="tips.html">Pro Tips</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html" role="button">Contact</a></li>
-    </ul>
-  </nav>
+  </section>
+</main>
 
-  <main class="container">
-    <section>
-      <h2>Pro Cleaning Tips</h2>
-      <ul>
-        <li><strong>Use vinegar and baking soda</strong> to unclog and clean drains naturally.</li>
-        <li><strong>Clean top to bottom</strong> – always dust high shelves before the floor.</li>
-        <li><strong>Microfiber cloths</strong> pick up dust better than paper towels.</li>
-        <li><strong>Use lemon and salt</strong> to clean your garbage disposal and sinks.</li>
-        <li><strong>Don’t forget the baseboards!</strong> A quick wipe makes a huge difference.</li>
-      </ul>
-    </section>
-  </main>
+<footer class="container">
+  <small>© 2025 Beachside Cleaners</small>
+</footer>
 
-  <footer class="container">
-    <small><a href="#">© 2025 Beachside Cleaners</a> • <a href="#">Privacy Policy</a></small>
-  </footer>
 </body>
 </html>
