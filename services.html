@@ -4,55 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Our Services - Beachside Cleaners</title>
+
+  <!-- Pico CSS for styling -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <!-- Pacifico Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
   <style>
-    header {
+    .custom-header {
       background-color: #0077b6;
-      padding: 2rem;
+      padding: 2.5rem 1rem;
       text-align: center;
       color: white;
     }
-    header h1 {
-      margin: 0;
+
+    .logo {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
-    img {
-      max-width: 100%;
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      margin: 0;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
       border-radius: 8px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Beachside Cleaners</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="index.html#about">About</a>
-    <a href="services.html">Services</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Header with logo and navigation -->
+  <header class="custom-header">
+    <img src="logo.jpg" alt="Beachside Cleaners Logo" class="logo" />
+    <h1>Beachside Cleaners</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
 
-<main class="container">
-  <h2>Our Services</h2>
-  <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
+  <main class="container">
+    <section id="services">
+      <hgroup>
+        <h2>Our Services</h2>
+        <h3>Flexible Packages to Meet Your Needs</h3>
+      </hgroup>
 
-  <figure>
-    <img src="images/services.jpg" alt="Cleaner working on house" />
-    <figcaption>Our team offers everything from cleaning to yard work and painting.</figcaption>
-  </figure>
+      <p>We offer standard cleaning, deep cleaning, move-in/move-out packages and more.</p>
 
-  <ul>
-    <li><strong>Standard Cleaning:</strong> Starting at $120</li>
-    <li><strong>Deep Cleaning:</strong> Starting at $180</li>
-    <li><strong>Move-In/Move-Out Cleaning:</strong> Starting at $200</li>
-    <li><strong>Yard Cleanup</strong> & Small Repairs</li>
-  </ul>
-</main>
+      <figure>
+        <img src="images/services.jpg" alt="Cleaner working on house" />
+        <figcaption>Our team offers everything from cleaning to yard work and painting.</figcaption>
+      </figure>
 
-<footer class="container">
-  <small>© 2025 Beachside Cleaners</small>
-</footer>
+      <ul>
+        <li><strong>Standard Cleaning:</strong> Starting at $120</li>
+        <li><strong>Deep Cleaning:</strong> Starting at $180</li>
+        <li><strong>Move-In / Move-Out Cleaning:</strong> Starting at $200</li>
+      </ul>
+
+      <h3>Bundle Packages</h3>
+      <ul>
+        <li><strong>Fresh Start Package:</strong> Save 15% with deep cleaning + yard cleanup</li>
+        <li><strong>Beachside Refresh:</strong> Airbnb rental bundle – loyalty discount after 5</li>
+        <li><strong>Home & Yard Combo:</strong> Save $25–$50 when combined</li>
+        <li><strong>Full Home Care Bundle:</strong> Monthly cleaning, yard work, home checks</li>
+        <li><strong>Total Care Membership:</strong> Worry-free year-round property upkeep</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>&copy; 2025 Beachside Cleaners • <a href="#">Privacy Policy</a></small>
+  </footer>
 
 </body>
 </html>
