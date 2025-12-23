@@ -105,9 +105,15 @@ header.custom-header h1 {
 }
 
 .checklist-table .group td {
-  background: #f5f7fa;
-  font-weight: 700;
-  text-align: left;
+  background: #e6f4fb;          /* subtle blue tint */
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #005f8f;
+  border-top: 2px solid #0077b6;
+}
+
 }
 
 .checklist-table td {
