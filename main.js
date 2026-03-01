@@ -128,37 +128,6 @@ document.getElementById("bookingForm").addEventListener("submit", e => {
   }, 2000);
 });
 
-/* ----------------------------------------------------------- 
-   UPDATED MAP — Michigan City Service Area 
------------------------------------------------------------ */
-// Center the map on Michigan City [lat, lng]
-const map = L.map('map').setView([41.7075, -86.8950], 11);
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "&copy; OpenStreetMap contributors"
-}).addTo(map);
-
-const locations = [
-  { name: "Michigan City, IN", coords: [41.7075, -86.8950] },
-  { name: "Long Beach, IN", coords: [41.7423, -86.8525] },
-  { name: "Trail Creek, IN", coords: [41.7014, -86.8536] },
-  { name: "Shoreland Hills, IN", coords: [41.7510, -86.8350] }
-];
-
-locations.forEach(loc => {
-  L.marker(loc.coords)
-    .addTo(map)
-    .bindPopup(`<b>${loc.name}</b><br>Service Available!`);
-});
-
-// Add a service radius circle (Approx 10 miles)
-L.circle([41.7075, -86.8950], {
-  color: '#0077b6',
-  fillColor: '#3ab7ff',
-  fillOpacity: 0.2,
-  radius: 16000 
-}).addTo(map);
-Now servicing!`);
-});
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
