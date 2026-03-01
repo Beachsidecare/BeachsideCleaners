@@ -77,20 +77,39 @@
     <h3>We're ready when you are</h3>
 
     <!-- Contact Details -->
-    <div class="contact-info">
+ <div class="contact-info">
       <p><strong>Call/Text:</strong> <a href="tel:2192145610">219-214-5610</a> or <a href="tel:2192431838">219-243-1838</a></p>
       <p><strong>Email:</strong> <a href="mailto:beachsidecleanersmc@gmail.com">beachsidecleanersmc@gmail.com</a></p>
-      <p><strong>Facebook:</strong> 
-        <a href="https://www.facebook.com/beachside.cleaners.2025/" target="_blank">
-          <i class="fab fa-facebook-square"></i> Follow us on Facebook
-        </a>
-      </p>
-      <p><strong>Yelp:</strong> 
-        <a href="https://www.yelp.com/biz/beachside-cleaners-michigan-city" target="_blank">
-          <i class="fab fa-yelp"></i> Check us out on Yelp
-        </a>
-      </p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/beachside.cleaners.2025/" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook</a></p>
+      <p><strong>Yelp:</strong> <a href="https://www.yelp.com/biz/beachside-cleaners-michigan-city" target="_blank"><i class="fab fa-yelp"></i> Check us out on Yelp</a></p>
     </div>
+
+    <hr>
+
+    <h3>Request a Quote</h3>
+    <form action="https://formspree.io/f/your-unique-id" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+      <label for="service">Service Interested In</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select a service...</option>
+        <option value="House Cleaning">House Cleaning</option>
+        <option value="Yard Rescue">Major Yard Rescue</option>
+        <option value="Quick Fix">Quick Home Fix</option>
+        <option value="Other">Other / Multiple</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit">Submit Request</button>
+    </form>
   </section>
 </main>
 
